@@ -39,7 +39,6 @@ ip_trace_by_city = {}
 country_ips.each do |ip|
   # API limits to 2 requests/second so throttling request frequency here.
   sleep 0.6
-
   ip_trace = Net::HTTP.get(URI("http://api.ipinfodb.com/v3/ip-city/?key=#{API_KEY}&ip=#{ip.first}&format=json"))
   ip_trace = JSON.parse(ip_trace)
   if ip_trace_by_city[ip_trace['cityName']]
@@ -56,3 +55,25 @@ puts "IPs by City:\n----------------"
 ip_trace_by_city.each do |city, count|
   puts "#{city}: #{count}"
 end
+
+puts "\nWould you like do dump this data to a text file? Enter 'Y' for yes, any other character for no."
+input = $stdin.getc.upcase
+exit unless input == 'Y'
+
+outfile_name = "#{ARGV[0]}_drill_down_report-#{Time.now}"
+outfile = File.open(outfile_name, 'w')
+
+# Print IP data to file.
+outfile.puts "Unique IPs from #{ARGV[0]}: #{country_ips.count}\n\n"
+outfile.puts "Requests by IP:\n---------------"
+country_ips.each do |ip, count|
+  outfile.puts "#{ip}: #{count}"
+end
+
+# Print City data to file.
+outfile.puts "\nUnique Cities among IP locations: #{ip_trace_by_city.count}\n\n"
+outfile.puts "IPs by City:\n----------------"
+ip_trace_by_city.each do |city, count|
+  outfile.puts "#{city}: #{count}"
+end
+puts puts "Data saved to #{outfile_name}"

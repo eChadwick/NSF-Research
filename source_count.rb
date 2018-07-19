@@ -22,14 +22,14 @@ request_sources.each do |x, y|
   puts "#{x}: #{y}"
 end
 
-puts "\nWould you like do dump this list to a text file? Enter 'Y' for yes, any other character for no."
+puts "\nWould you like do dump this data to a text file? Enter 'Y' for yes, any other character for no."
 input = $stdin.getc.upcase
 exit unless input == 'Y'
 
-outfile_name = "Source_Count-#{Time.now}.txt"
+outfile_name = "Source_Count_report-#{Time.now}.txt"
 outfile = File.open(outfile_name, 'w')
 outfile.puts "Requests by country:\n---------------------"
 request_sources.each do |x, y|
   outfile.puts "#{x}: #{y}"
 end
-puts "List saved to Source_Count-#{outfile_name}"
+puts "Data saved to #{outfile_name}"
