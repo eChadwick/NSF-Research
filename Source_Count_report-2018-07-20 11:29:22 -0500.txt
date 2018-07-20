@@ -1,0 +1,140 @@
+Requests by country:
+---------------------
+United States: 13954
+China: 10307
+Hong Kong: 9818
+Bulgaria: 4285
+Russian Federation: 2985
+Netherlands: 2683
+Unknown: 2115
+Australia: 1664
+Germany: 1404
+United Kingdom: 661
+Ukraine: 626
+Sweden: 605
+Canada: 602
+Japan: 587
+Brazil: 542
+Mexico: 521
+Seychelles: 450
+Italy: 391
+France: 375
+India: 315
+Indonesia: 294
+Viet Nam: 292
+Iran Islamic Republic Of: 261
+Korea Republic Of: 187
+Taiwan ROC: 167
+Croatia: 167
+Romania: 166
+Singapore: 153
+Ireland: 129
+192.88.99.0-192.88.99.255: 123
+Czech Republic: 109
+Turkey: 105
+Bangladesh: 85
+Poland: 81
+Venezuela Bolivarian Republic Of: 81
+Thailand: 81
+Israel: 78
+Iceland: 51
+South Africa: 47
+Cambodia: 41
+Colombia: 40
+Spain: 39
+Argentina: 35
+10.0.0.0-10.255.255.255: 31
+Norway: 25
+Philippines: 24
+Kazakhstan: 19
+Puerto Rico: 19
+United Arab Emirates: 18
+Malaysia: 17
+Hungary: 17
+Chile: 16
+Ecuador: 16
+Egypt: 14
+Mongolia: 12
+Denmark: 12
+Botswana: 11
+Serbia: 11
+Greece: 11
+Albania: 10
+Tunisia: 9
+Afghanistan: 9
+Dominican Republic: 9
+Peru: 9
+Panama: 9
+Portugal: 9
+Kuwait: 8
+Nepal: 8
+Pakistan: 8
+Austria: 8
+Bolivia Plurinational State Of: 7
+Iraq: 6
+Moldova Republic Of: 6
+Uruguay: 6
+Libyan Arab Jamahiriya: 6
+Switzerland: 5
+Armenia: 5
+Macao: 5
+Ethiopia: 5
+Nigeria: 5
+Latvia: 5
+Bosnia And Herzegovina: 5
+Honduras: 4
+Belarus: 4
+Andorra: 4
+Slovakia: 4
+Macedonia The Former Yugoslav Republic Of: 4
+Lithuania: 4
+Finland: 4
+Algeria: 3
+Georgia: 3
+Cyprus: 3
+European Union: 3
+Guatemala: 3
+Slovenia: 3
+Kenya: 3
+Saudi Arabia: 2
+Cameroon: 2
+Costa Rica: 2
+Belgium: 2
+Tanzania United Republic Of: 2
+Nicaragua: 2
+Lao Peoples Democratic Republic: 2
+Mozambique: 2
+Morocco: 2
+Malawi: 2
+Lebanon: 2
+Mauritius: 2
+New Zealand: 2
+Saint Vincent And The Grenadines: 1
+Oman: 1
+Bahrain: 1
+Sri Lanka: 1
+Guyana: 1
+Maldives: 1
+Zimbabwe: 1
+Brunei Darussalam: 1
+Burundi: 1
+Palestinian Territory Occupied: 1
+CTe D Ivoire: 1
+Congo The Democratic Republic Of The: 1
+Dominica: 1
+Somalia: 1
+Uzbekistan: 1
+Burkina Faso: 1
+Jersey: 1
+Azerbaijan: 1
+Estonia: 1
+Bahamas: 1
+Ghana: 1
+Tajikistan: 1
+Saint Martin (French Part): 1
+Paraguay: 1
+Qatar: 1
+Lesotho: 1
+Montenegro: 1
+Benin: 1
+RUnion: 1

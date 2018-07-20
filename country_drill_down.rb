@@ -35,16 +35,19 @@ end
 puts "\nTracing IPs. This will approximately #{(country_ips.count / 1.6 / 60).round(2)} minutes."
 
 # Hit the API to get city level location data for country_ips.
+last_request_time = nil
 ip_trace_by_city = {}
 country_ips.each do |ip|
-  # API limits to 2 requests/second so throttling request frequency here.
-  sleep 0.6
   ip_trace = Net::HTTP.get(URI("http://api.ipinfodb.com/v3/ip-city/?key=#{API_KEY}&ip=#{ip.first}&format=json"))
+  last_request_time = Time.now
   ip_trace = JSON.parse(ip_trace)
   if ip_trace_by_city[ip_trace['cityName']]
     ip_trace_by_city[ip_trace['cityName']] += 1
   else
     ip_trace_by_city[ip_trace['cityName']] = 1
+  end
+  # Throttling request rate to comply with API limit of 2 requests per second.
+  while(Time.now < (last_request_time + 0.6)) do
   end
 end
 ip_trace_by_city =  ip_trace_by_city.sort_by(&:last).reverse
