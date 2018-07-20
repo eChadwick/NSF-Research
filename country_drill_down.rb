@@ -32,7 +32,7 @@ country_ips.each do |ip, count|
   puts "#{ip}: #{count}"
 end
 
-puts "\nTracing IPs. This will approximately #{(country_ips.count / 2.0 / 60).round(2)} minutes."
+puts "\nTracing IPs. This will approximately #{(country_ips.count / 1.6 / 60).round(2)} minutes."
 
 # Hit the API to get city level location data for country_ips.
 ip_trace_by_city = {}
